@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="veiwport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="css-MinHjemmeside.css">
+    <title>EN ADSKILT FAMILIE</title>
+
+</head>
+
+<body>
+    <main>
+        <h1><b>EN ADSKILT FAMILIE</b></h1>
+
+        <table class="menu">
+            <tr>
+                <th>
+                    <a href="index.html">INTRODUKTION</a>
+                </th>
+                <th>
+                    <a href="Far.html">FRA FAR</a>
+                </th>
+                <th>
+                    <a href="Mor.html">FRA MOR</a>
+                </th>
+                <th>
+                    <a href="MIG.html">FRA MIG</a>
+                </th>
+                <th>
+                    <a href="DIG.html">TIL DIG</a>
+                </th>
+            </tr>
+        </table>
+        <img class="FamilieBillede" src="Familiebillede.jpg" alt="FamilieBillede">
+        <br><br>
+        <p1>
+            <br>
+            Vi er blevet skilt
+            <br>
+            Jeg er blevet skilt fra mine børn
+            <br>
+            Mine forældre er blevet skilt
+            <br>
+            Vi er en adskilt familie
+
+        </p1>
+        <br><br>
+        <button onclick="skiftTekst()">Mit første tankemylder om skilsmissen</button>
+        <p id="tekst">&nbsp;</p>
+        <br><br><br>
+    </main>
+    <script>
+        let tekstIndex = 0;
+        const tekster = [
+            "MIN FAMILIE ER BLEVET ADSKILT OG JEG VED IKKE HVAD JEG SKAL GØRE",
+            "HVAD HVIS JEG MISTER MINE FORÆLDRE",
+            "HVORDAN KUNNE DE GØRE DET MOD OS",
+            "JEG KOMMER ALDRIG TIL AT SE MIN FAR IGEN", "VORES FAMILIE ER BLEVET REVET ITU", "JEG SAVNER MIN MOR", "VI BLIVER ALDRIG EN FAMILIE IGEN", "DET ER MIN SKYLD RESTEN AF MIT LIV ER JEG ANDERLEDES", "HVORFOR SKAL DET LIGE VÆRE MIG", "JEG VIL HELLERE VÆRE VIDNE TIL 1000 SKÆNDERIER END DENNE ENE DAG", "JEG VIL LADE SOM OM DET ALDRIG SKETE", "HVORFOR GRÆDER DE IKKE", "MIN VERDEN FALDER FRA HINANDEN OG JEG KAN IKKE HOLDE STYKKERNE SAMMEN MERE", "JEG VED IKKE HVORDAN JEG SKAL KOMME VIDERE", "JEG KOMMER ALDRIG TIL AT VÆRE HEL IGEN", "HVORDAN KAN MAN LEVE MED SÅ MEGET TOMHED, HVOR DER ENGANG VAR KÆRLIGHED", "VAR JEG IKKE GOD NOK?", "HVORDAN KAN JEG NOGENSINDE FINDE BALANCEN NÅR ALT ER SKUBBET OMKULD?", "JEG ER BLEVET TABT PÅ JORDEN", "DE ER LIGEGLADE MED MIG", "INGEN ANDRE KAN FORSTÅ DET MØRKE JEG STÅR I", "JEG VIL BARE TILBAGE, TIL DA VI STADIG VAR EN FAMILIE TIL DER VAR VARME I VORES HJEM", "HVORDAN KOMMER MAN VIDERE NÅR MAN IKKE VIL VIDERE?", "HVORDAN LEVER MAN MED ET HJERTE DER ER SPLITTET I TO?", "JEG SAVNER MIN MOR JEG SAVNER MIN FAR JEG VIL HAVE MIN FAMILIE IGEN"
+
+        ];
+
+        
+        function skiftTekst() {
+            var tekstElement = document.getElementById("tekst");
+
+            tekstElement.innerHTML = tekster[tekstIndex];
+
+            tekstIndex = (tekstIndex + 1) % tekster.length;
+        }
+        /*Skift tekstfunktion*/
+
+    </script>
+    <p2>
+        <br>
+    </p2>
+    <br><br><br>
+    <table class="menu">
+        <tr>
+            <th>
+                <a href="index.html">INTRODUKTION</a>
+            </th>
+            <th>
+                <a href="Far.html">FRA FAR</a>
+            </th>
+            <th>
+                <a href="Mor.html">FRA MOR</a>
+            </th>
+            <th>
+                <a href="Mig.html">FRA MIG</a>
+            </th>
+            <th>
+                <a href="Kontakt.html">KONTAKT</a>
+            </th>
+        </tr>
+    </table>
+        <p4>
+        <a href="https://bornsvilkar.dk/det-goer-vi/foraeldretelefonen/"target="_blank">Børns vilkår: ForældreTelefonen: 35 55 55 57</a>
+
+        <a href="https://migimidten.dk/boernenes-skilsmissetelefon"target="_blank">Mig i midten: Børnenes skilsmissetelefon: 20 60 05 50</a>
+            <a href="https://moedrehjaelpen.dk/holdepunkt/viden-og-raad/hjaelp-til-barnet-efter-skilsmisse-raadgivning/"target="_blank">Mødrehjælpen - Skilsmisserådgivning</a>
+            
+    </p4>
+
+</body>

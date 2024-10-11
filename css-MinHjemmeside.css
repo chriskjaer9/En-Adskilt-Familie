@@ -1,0 +1,264 @@
+header {
+    background-color: black;
+}
+
+main {
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+}
+
+/*OVERSKRIFT*/
+h1 {
+    font-family: monospace;
+    color: whitesmoke;
+    font-size: 40pt;
+    font-weight: 200;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/*UNDEROVERSKRIFT*/
+p1 {
+    font-family: monospace;
+    color: whitesmoke;
+    font-size: 14pt;
+    text-align: center;
+}
+
+p {
+    font-family: monospace;
+    color: whitesmoke;
+    font-size: 14pt;
+    text-align: center;
+}
+
+/*Knap til index*/
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    font-family: monospace;
+    color: whitesmoke;
+    background-color: rgb(25, 25, 25);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #36454F;
+}
+
+/*Knap til MIG*/
+show-credits-button{
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(30, 30, 30)
+}
+
+button:active {
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/*INTRO-TEKST*/
+p2 {
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 11pt;
+    line-height: 1.5;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*Menu til alle sider*/
+.menu {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    font-family: monospace;
+}
+
+/*Links*/
+a {
+    font-size: 12pt;
+    text-align: center;
+    padding-left: 30px;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    text-align: center;
+}
+
+.FamilieBillede {
+    width: 500px;
+    height: auto;
+    margin-top: 0%;
+}
+.MorBillede {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0%;
+}
+
+.FarBillede{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0%;
+}
+
+.MigBillede{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 135%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0%;
+}
+
+/* Scrolling credits*/
+@font-face {
+    font-family: monospace;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: monospace;
+    overflow-y: scroll;
+}
+
+/* Knapstil */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #444;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.outer-wrapper {
+    position: relative;
+    height: 200px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    width: 1600px;
+    margin-left: -100px;
+    font-family: monospace;
+    text-align: right;
+    color: whitesmoke;
+    animation: 30s credits linear infinite;
+    animation-delay: 1s;
+    z-index: 10;
+}
+
+.Tak {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+@keyframes credits {
+    0% {
+        top: 100%;
+        /* Start nederst */
+    }
+
+    100% {
+        top: -670%;
+        /* Ruller opad */
+    }
+}
+
+p3 {
+    font-family: monospace;
+    color: whitesmoke;
+    font-size: 10pt;
+    text-align: center;
+}
+p4
+{    font-family: monospace;
+    color: whitesmoke;
+    font-size: 1pt;
+    text-align:center;
+    
+}
+
+p5 {
+    font-family: monospace;
+    color: whitesmoke;
+    font-size: 12pt;
+    text-align:left;
+}
+p6 {
+    font-family: monospace;
+    color: whitesmoke;
+    font-size: 12pt;
+    text-align:right;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    /* Gør plads mellem de to elementer */
+    align-items: flex-start;
+    /* Sørger for, at elementerne starter samme sted */
+}
+
+.left-text {
+    width: 70%;
+    /* Bredde til venstre tekst */
+}
+
+.right-text {
+    width: 30%;
+    /* Bredde til højre tekst */
+    text-align: right;
+    /* Højrejuster teksten */
+}
+
+
+/* Mobile view*/
+@media screen and (max-width:992px) {
+    .gridcontainer {
+        background-color: Black;
+
+    }
+}
